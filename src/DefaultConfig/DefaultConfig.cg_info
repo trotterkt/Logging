@@ -1,0 +1,589 @@
+I-Logix-RPY-Archive version 8.11.0 * 9499822
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 14;
+	- value = "default\\cache.cpp" 9.19.2016::21:59:33
+	"default\\cache.h" 9.19.2016::23:52:55
+	"default\\icache.cpp" 9.19.2016::23:47:52
+	"default\\icache.h" 9.19.2016::23:47:52
+	"default\\pfwbroker.cpp" 9.20.2016::2:3:54
+	"default\\pfwbroker.h" 9.20.2016::1:39:36
+	"default\\pfwfilebroker.cpp" 9.19.2016::6:37:28
+	"default\\pfwfilebroker.h" 9.19.2016::7:1:24
+	"default\\pfwxmlbroker.cpp" 9.17.2016::3:44:6
+	"default\\pfwxmlbroker.h" 9.17.2016::3:44:6
+	"default\\singleton.h" 9.19.2016::22:9:27
+	"default\\testequipmentbroker.cpp" 9.18.2016::23:40:48
+	"default\\testequipmentbroker.h" 9.18.2016::23:40:48
+	"default\\virtualproxy.h" 9.20.2016::1:52:22
+	
+}
+- size = 63;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID f3326944-026b-452a-a69d-a157509f7090;
+}
+- genTime = 9.20.2016::0:54:51;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 9bcd1bb0-fb5a-4e77-8de9-8e5df73a305f;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\iostream";
+	- _id = GUID 328f3280-dc19-46d0-b340-4c549885db4e;
+}
+- genTime = 9.19.2016::20:12:20;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 88ef5c8f-7140-4c22-a93f-87281f8656a9;
+}
+- genTime = 9.20.2016::1:36:40;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "Singleton";
+	- _name = "T";
+	- _id = GUID c8e9090f-ea0e-472c-b152-06b415407683;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 63583e54-82d6-4aa0-938a-04344630c8cb;
+}
+- genTime = 9.20.2016::0:39:44;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 8e140d79-0dcd-47db-90b5-8a0f6b3d371b;
+}
+- genTime = 9.19.2016::20:59:11;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 211a4022-f4b3-4d42-8fa5-abff17ac1a36;
+}
+- genTime = 9.20.2016::1:35:7;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 8f54e2f0-acbc-4288-8b47-1ca5aa1ec556;
+}
+- genTime = 9.20.2016::0:44:18;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "Cache";
+	- _name = "Subject";
+	- _id = GUID f5ed88d5-ab06-4b2b-b866-f04faf76e603;
+}
+- genTime = 9.19.2016::23:41:1;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Cache";
+	- _id = GUID 284d9a96-890b-4eb2-a54f-949ce041d49c;
+}
+- genTime = 9.20.2016::0:43:35;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "PFWXmlBroker";
+	- _id = GUID bba7d3f7-23d4-41c3-a564-f73e72269a4c;
+}
+- genTime = 9.19.2016::22:9:27;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID bc373b7d-a310-4534-bde6-c6e5add1a15c;
+}
+- genTime = 9.20.2016::0:43:35;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "filesystem.sbs";
+	- _subsystem = "Default::namespace_univ";
+	- _class = "";
+	- _name = "filesystem";
+	- _id = GUID d5cde95d-289d-48a8-8ecd-a846ca69a13b;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost\\filesystem\\fstream";
+	- _id = GUID 5be93b39-1600-4ca6-99a7-c4d997c5aeaa;
+}
+- genTime = 9.19.2016::20:12:20;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost\\thread\\thread";
+	- _id = GUID 894a51b1-844b-4e8d-9986-c869a4b22867;
+}
+- genTime = 9.19.2016::20:12:20;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "cachedPair";
+	- _id = GUID b39675d0-5fd1-4bf2-a878-d0c96084aef1;
+}
+- genTime = 9.20.2016::0:43:35;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 4bceedb6-ecbf-4d23-b34f-c73fcba6b014;
+}
+- genTime = 9.19.2016::23:41:0;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 1786aba9-a5be-4dc2-8e99-26279c6c603a;
+}
+- genTime = 9.20.2016::1:32:41;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "Cache";
+	- _name = "BufferSize";
+	- _id = GUID 54831cff-cd4e-4423-bc38-84954267c011;
+}
+- genTime = 9.19.2016::23:41:1;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "ICache";
+	- _id = GUID ecb26606-ce0d-4bad-a2e8-b7a166d68531;
+}
+- genTime = 9.20.2016::0:56:0;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "VirtualProxy";
+	- _name = "Broker";
+	- _id = GUID 2a56f2ad-8103-4173-8c3c-c458861b8ab0;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "TestEquipmentBroker";
+	- _id = GUID 1a0fb93b-1341-4c1a-99ca-b964342273e7;
+}
+- genTime = 9.19.2016::22:9:27;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost\\regex";
+	- _id = GUID f8fae819-4653-4b3c-8fce-45917bbfac49;
+}
+- genTime = 9.19.2016::20:12:20;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "VirtualProxy";
+	- _name = "Subject";
+	- _id = GUID bae80ee3-a663-42ad-9b05-9b4a225ff9be;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 5d8182af-8c4b-4982-b70b-ba300480aa6a;
+}
+- genTime = 9.19.2016::22:6:27;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 7b5ab37f-64d6-4d10-b833-597e4bbc3655;
+}
+- genTime = 9.19.2016::23:41:0;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 3e095732-37e5-415e-9fb1-e31972f7f835;
+}
+- genTime = 9.20.2016::0:44:18;
+- hElement = { IHandle 
+	- _m2Class = "IFolder";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files";
+	- _id = GUID 6352dd32-c4c5-498d-a9d9-3da64c928c7d;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IFolder";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost";
+	- _id = GUID 316bea53-ade4-41d0-947d-1f85ce8866e1;
+}
+- genTime = 9.19.2016::22:6:27;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "namespace_univ.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "namespace_univ";
+	- _id = GUID 208d5c6c-3c65-4782-b66a-e2eb32aa97ea;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 3352ff17-a8bf-437e-b7ae-f172d434f899;
+}
+- genTime = 9.20.2016::1:32:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 444c38c1-e4be-4d0d-be79-b1a35efb0611;
+}
+- genTime = 9.19.2016::23:49:51;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 7c35f0a1-45b0-4765-b010-abf5aaabd00f;
+}
+- genTime = 9.20.2016::1:35:7;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 0e09be56-5ac2-40ff-b123-195bffcc459a;
+}
+- genTime = 9.19.2016::23:41:0;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 9d1fda02-460e-47bd-b42b-5546f0107d0d;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "PFWBroker";
+	- _id = GUID 15297696-d62f-4258-97b2-6f5940df63ab;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 6af370c0-e30f-4da2-be97-d44d638ed6bd;
+}
+- genTime = 9.20.2016::2:7:35;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID faa1634a-d5f1-4009-a413-53b7ed977e40;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "PFWBroker";
+	- _name = "Subject";
+	- _id = GUID f0688340-f861-4238-a35e-72f1356392d2;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IComponent";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging";
+	- _id = GUID a8dd0597-f716-4865-bf46-1fc14061ef81;
+}
+- genTime = 9.19.2016::22:9:27;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\vector";
+	- _id = GUID ad313a92-2732-4caa-9414-f32bf968d386;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "VirtualProxy";
+	- _id = GUID 8342eac6-b853-4240-827d-da49f828d1ad;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 9d0536e0-777e-4431-86f1-5a7e0494b058;
+}
+- genTime = 9.19.2016::23:43:41;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID b9ffd93f-ef22-452e-8264-9d02e15d94f4;
+}
+- genTime = 9.20.2016::2:5:11;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost\\circular_buffer";
+	- _id = GUID 2c375021-3519-4af1-8eae-0f04d5b4179a;
+}
+- genTime = 9.19.2016::22:6:27;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\iterator";
+	- _id = GUID dbbce571-d22b-4163-87c4-288299cde90a;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Singleton";
+	- _id = GUID 1d7b1e80-ff38-4070-94b0-1aaa1ccaf2d7;
+}
+- genTime = 9.19.2016::23:41:1;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\boost\\thread\\mutex";
+	- _id = GUID 50a0f299-46f9-4159-b36e-59612590e592;
+}
+- genTime = 9.19.2016::20:12:20;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\algorithm";
+	- _id = GUID 0c35fba2-1f54-4486-8498-254ebca2fa60;
+}
+- genTime = 9.20.2016::1:36:40;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "PFWFileBroker";
+	- _name = "Subject";
+	- _id = GUID 0e501955-a64a-4781-beb9-eadd4008ccb3;
+}
+- genTime = 9.19.2016::20:12:22;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "cachedPair";
+	- _name = "Subject";
+	- _id = GUID 80fe996a-515a-4959-9f44-e29ffaa5c242;
+}
+- genTime = 9.20.2016::0:43:35;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID d8fd1fba-5fa1-4e6a-bf88-1b72d4f82c74;
+}
+- genTime = 9.20.2016::0:43:35;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 8960b585-42b4-4115-82b3-1f913094b793;
+}
+- genTime = 9.20.2016::2:3:54;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID bb5ee18b-52ac-4ad6-8784-d2c4eec95490;
+}
+- genTime = 9.19.2016::23:41:0;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID c6f23a1a-b01d-4f8e-afce-563d651f2f57;
+}
+- genTime = 9.20.2016::1:32:41;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\DefaultConfig";
+	- _id = GUID 7a5da76d-beea-4358-a1c0-721a7f2afc1b;
+}
+- genTime = 9.19.2016::22:9:27;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 92aa61d7-440f-46fb-ac47-2e648ebb1dfb;
+}
+- genTime = 9.20.2016::0:39:44;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID ecded61a-2905-4b68-a66d-4260eb0fc9f2;
+}
+- genTime = 9.19.2016::23:44:15;
+- hElement = { IHandle 
+	- _m2Class = "IFile";
+	- _filename = "Logging.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Logging\\Files\\string";
+	- _id = GUID 55a6ff9f-d378-40eb-a699-b81aba315ab5;
+}
+- genTime = 9.20.2016::1:36:40;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "PFWFileBroker";
+	- _id = GUID c9cc8799-24ac-4274-b31d-d825bc4aaf43;
+}
+- genTime = 9.19.2016::22:9:27;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID d6bb50ab-7014-4d6b-b5cf-74e9a4c6c3c6;
+}
+- genTime = 9.19.2016::22:1:18;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID adeae825-f201-425a-935f-4b4ab4172bf8;
+}
+- genTime = 9.20.2016::1:32:41;
+
