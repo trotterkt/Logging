@@ -5,20 +5,26 @@
 #include "Default\Singleton.h"
 #include "Default\DataPacket.h"
 
+
 class TestEquipmentBroker : public PFWFileBroker, public Singleton<TestEquipmentBroker>
 {
 public:
 	TestEquipmentBroker();
 	~TestEquipmentBroker();
 
-	void* materializeWith(boost::regex oid);
+	void* materializeWith(std::string oid);
+    ICache* materializeAll();
 
-	//void* objectWith(boost::regex oid);
+	void* objectWith(std::string oid);
 
-//protected:
 	void translate(int subject); 
 	void translate(double subject, std::string& converted); 
 	void translate(DataPacket subject);
+
+	virtual void reset();
+
+private:
+	bool getNextPacket(unsigned char* packetBuffer);
 
 };
 

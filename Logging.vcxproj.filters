@@ -42,6 +42,12 @@
     <ClCompile Include="src\DefaultConfig\Default\Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\DefaultConfig\Default\Sorting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DefaultConfig\Default\DataNaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\defaultconfig\MainLogging.h">
@@ -81,6 +87,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\DefaultConfig\Default\ObjectIdentification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DefaultConfig\Default\Sorting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DefaultConfig\Default\DataNaming.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

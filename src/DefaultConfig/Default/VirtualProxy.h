@@ -8,7 +8,8 @@
 #ifndef DEFAULTCONFIG_DEFAULT_VIRTUALPROXY_H_
 #define DEFAULTCONFIG_DEFAULT_VIRTUALPROXY_H_
 
-#include <boost/regex.hpp>
+#include <string>
+#include <Default\ICache.h>
 
 	
 template<class Subject, class Broker> class VirtualProxy
@@ -16,18 +17,23 @@ template<class Subject, class Broker> class VirtualProxy
 	public:
 		VirtualProxy() { }
 
-		void create(boost::regex oid = boost::regex(""));
-
-		//void create();
+		ICache* create(std::string oid = std::string(""));
 
 		Subject* getRealSubject();
 		void putRealSubject(Subject subject);
 
 		Subject* operator->();
 
+		// this resets by closing all files and caches defined
+		// by the concrete Broker. Esentially restarting with
+		// what would be performed on Broker construction since
+		// they are singletons
+		void reset() { 	myPFWBroker = &createBroker(); // this resets the templated pointer for the broker
+                        myPFWBroker->reset(); 
+		             }
 
 	private:
-		boost::regex myOid;
+		std::string myOid;
 		Broker* myPFWBroker;
 
 		Broker& createBroker()
@@ -41,26 +47,24 @@ template<class Subject, class Broker> class VirtualProxy
 
 };
 
-//template<class Subject, class Broker>
-//void VirtualProxy<Subject, Broker>::create()
-//{
-//
-//}
 
 template<class Subject, class Broker>
-void VirtualProxy<Subject, Broker>::create(boost::regex oid)
+ICache* VirtualProxy<Subject, Broker>::create(std::string oid)
 {
 
 	myOid = oid;
 	myPFWBroker = &createBroker();
+
+	ICache* cachePtr(0);
 	
 	// if a specific oid is not specified,
 	// materilize all objects
-	if (oid == boost::regex(""))
+	if (oid == std::string(""))
 	{
-		myPFWBroker->materializeAll();
+		cachePtr = myPFWBroker->materializeAll();
 	}
 
+	return cachePtr;
 }
 
 	

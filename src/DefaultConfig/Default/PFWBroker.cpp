@@ -9,14 +9,14 @@ PFWBroker::~PFWBroker()
 {
 }
 
-bool PFWBroker::isMaterialized() 
+bool PFWBroker::isMaterialized(std::string oid) 
 {
 	//:TODO: Stub
-	return false;
+	return (itsICache[0]->isMaterialized(oid));
 }
 
-void PFWBroker::materializeAll() 
-{
-}
+//std::vector<ICache*> PFWBroker::materializeAll() 
+//{
+//}
 
 

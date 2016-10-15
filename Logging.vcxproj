@@ -74,11 +74,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\DefaultConfig\Default\CCSDS_struct.cpp" />
+    <ClCompile Include="src\DefaultConfig\Default\DataNaming.cpp" />
     <ClCompile Include="src\DefaultConfig\Default\DataPacket.cpp" />
     <ClCompile Include="src\DefaultConfig\Default\ICache.cpp" />
     <ClCompile Include="src\defaultconfig\default\PFWBroker.cpp" />
     <ClCompile Include="src\defaultconfig\default\PFWFileBroker.cpp" />
     <ClCompile Include="src\defaultconfig\default\PFWXmlBroker.cpp" />
+    <ClCompile Include="src\DefaultConfig\Default\Sorting.cpp" />
     <ClCompile Include="src\defaultconfig\default\TestEquipmentBroker.cpp" />
     <ClCompile Include="src\DefaultConfig\Default\Time.cpp" />
     <ClCompile Include="src\defaultconfig\MainLogging.cpp" />
@@ -86,6 +88,7 @@
   <ItemGroup>
     <ClInclude Include="src\DefaultConfig\Default\Cache.h" />
     <ClInclude Include="src\DefaultConfig\Default\CCSDS_struct.h" />
+    <ClInclude Include="src\DefaultConfig\Default\DataNaming.h" />
     <ClInclude Include="src\DefaultConfig\Default\DataPacket.h" />
     <ClInclude Include="src\DefaultConfig\Default\ICache.h" />
     <ClInclude Include="src\DefaultConfig\Default\ObjectIdentification.h" />
@@ -93,6 +96,7 @@
     <ClInclude Include="src\defaultconfig\default\PFWFileBroker.h" />
     <ClInclude Include="src\defaultconfig\default\PFWXmlBroker.h" />
     <ClInclude Include="src\DefaultConfig\Default\Singleton.h" />
+    <ClInclude Include="src\DefaultConfig\Default\Sorting.h" />
     <ClInclude Include="src\defaultconfig\default\TestEquipmentBroker.h" />
     <ClInclude Include="src\DefaultConfig\Default\Time.h" />
     <ClInclude Include="src\defaultconfig\default\VirtualProxy.h" />

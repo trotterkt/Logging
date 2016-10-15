@@ -28,20 +28,43 @@ const uint16_t SteError_APID(0x21E);
 const uint16_t Mark_APID(0x21A);
 const uint16_t TimeOfDay_APID(0x100);
 
+//**********************************
+const uint16_t Unknown1_APID(0x201);
+const uint16_t Unknown2_APID(0x209);
+const uint16_t Unknown3_APID(0x210);
+//**********************************
+// Largest known data array size is for Diagnostic (APID 0x204)
+//const int MaximumRawPacketSize(sizeof(CCSDS_PrimaryHeader_struct) + sizeof(CCSDS_SecondaryHeader_struct) + 304);
+const int MaximumRawPacketSize(sizeof(CCSDS_PrimaryHeader_struct) + sizeof(CCSDS_SecondaryHeader_struct) + 500); // :TODO: ????
+
 class DataPacket 
 {
 public:
+	DataPacket();
 	DataPacket(unsigned char* buffer);
 	~DataPacket();
 	DataPacket(const DataPacket& right);
+	DataPacket& operator=(const DataPacket &right);
+	bool operator<(const DataPacket& right) 
+	{ 
+//		if (((this->getPrimaryHeader().myPacketIdentification) & SecondaryHeaderIndicationMask) >> SecondaryHeaderIndicationBit)
+//		{
+			return (this->myTime < right.myTime);
+//		}
+//		else
+//		{
+//			return false;
+//		}
+	}
 
 	CCSDS_PrimaryHeader_struct getPrimaryHeader() { return myHeader; }
 	CCSDS_SecondaryHeader_struct getSecondaryHeader() { return mySecondaryHeader; }
 	uint16_t getNumberOfDataWords() { return myNumberDataWords;  }
 	uint16_t* getDataWords() { return myDataWords;  }
 
+	Time& getTime() { return myTime;  }
+
 private :
-	DataPacket();
 	CCSDS_PrimaryHeader_struct myHeader;
 	CCSDS_SecondaryHeader_struct mySecondaryHeader;
 	uint16_t myNumberDataWords;

@@ -15,9 +15,18 @@ public:
 	Time(const Time& right);
 	void operator=(const CCSDS_SecondaryHeader_struct& right);
 	void operator=(const Time& right);
+	bool operator<(const Time& right);
+	bool operator>(const Time& right);
+	bool operator==(const Time& right);
+	uint16_t getDay() { return myDay; }
+	uint32_t getMilliSeconds() { return myMilliSeconds; }
+	uint16_t getMicroSeconds() { return myMicroSeconds; }
+
 
 private:
-
+	uint16_t myDay;
+	uint32_t myMilliSeconds;
+	uint16_t myMicroSeconds;
 };
 
 #endif

@@ -4,8 +4,12 @@
 #include <boost/thread/mutex.hpp>
 #include <boost/thread/thread.hpp>
 
-template <typename T> class Singleton {
+template <typename T> class Singleton 
+{
 public:
+	// To actually get the singleton, derived
+	// classes must use this static method. Otherwise,
+	// a normal local instanciation is created
 	static T& instance()
 	{
 		// Make sure only one instance at a timecontinues

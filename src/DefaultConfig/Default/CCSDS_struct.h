@@ -21,7 +21,7 @@ static const uint16_t ApidMask(0x03FF);
 static const uint16_t SecondaryHeaderIndicationMask(0x0800);
 static const uint16_t SecondaryHeaderIndicationBit(11);
 
-struct CCSDS_PrimaryHeader_struct 
+struct CCSDS_PrimaryHeader_struct
 {
 	// Primary Header
 	uint16_t myPacketIdentification;

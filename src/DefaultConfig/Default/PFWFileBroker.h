@@ -36,18 +36,19 @@ public:
 
 		// after object has been directed to persistence, clear
 		// the buffer
-		myTranslatedBuffer.clear();
+		myTranslatedBuffer.str("");
 	}
 
 	//:TODO: Cannot apply templated method here as in putObject(...) method. Cannot be resolved
 	// during compilation. Returned void pointer to be reinterpreted via materializeSubject()
-	void* objectWith(boost::regex oid)
+	void* objectWith(std::string oid)
 	{
 		//:TODO: Implement via Boost::Qi
 
 		// first check for instance in the cache
-		if (isMaterialized())
+		if (isMaterialized(oid))
 		{
+			// return the cache instance
 
 			// Stub
 			return 0;
@@ -59,7 +60,7 @@ public:
 		}
 	}
 
-	virtual void materializeAll();
+	virtual ICache* materializeAll() = 0;
 
 protected:
 	boost::filesystem::ofstream* myOutFileStreamPtr;
