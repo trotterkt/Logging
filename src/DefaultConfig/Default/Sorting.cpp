@@ -3,6 +3,7 @@
 #include "Default\Sorting.h"
 
 
+
 bool Sorting::operator()(std::pair<std::string, DataPacket>& first, std::pair<std::string, DataPacket> &second)
 {
 	//return (first.second < second.second);

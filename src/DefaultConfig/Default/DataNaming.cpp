@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdlib.h>  
 
+
 DataNaming::DataNaming(void)
 {
 	// :TODO: need to decide if use of environment variable should be applicable to

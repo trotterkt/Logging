@@ -1,6 +1,7 @@
 #ifndef Default_Time_H
 #define Default_Time_H
 
+
 #include "Default\CCSDS_struct.h"
 
 // Realization of time from the header information. As logging is

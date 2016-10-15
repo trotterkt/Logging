@@ -15,6 +15,7 @@
 
 #include <stdint.h>
  
+
 static const uint16_t PacketLengthMask(0x0FFFF);
 static const uint16_t PacketSequenceMask(0x03FFF);
 static const uint16_t ApidMask(0x03FF);

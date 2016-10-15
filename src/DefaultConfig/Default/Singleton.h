@@ -4,6 +4,7 @@
 #include <boost/thread/mutex.hpp>
 #include <boost/thread/thread.hpp>
 
+
 template <typename T> class Singleton 
 {
 public:

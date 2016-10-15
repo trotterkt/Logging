@@ -5,6 +5,7 @@
  *      Author: trottke1
  */
 
+
 #ifndef DEFAULTCONFIG_DEFAULT_VIRTUALPROXY_H_
 #define DEFAULTCONFIG_DEFAULT_VIRTUALPROXY_H_
 

@@ -6,6 +6,7 @@
 #include "Default\DataPacket.h"
 
 
+
 class TestEquipmentBroker : public PFWFileBroker, public Singleton<TestEquipmentBroker>
 {
 public:

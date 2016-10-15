@@ -2,7 +2,9 @@
 #define Default_PFWXmlBroker_H
 #include "Default\PFWBroker.h"
  
-class PFWXmlBroker : public PFWBroker {
+class PFWXmlBroker : public PFWBroker 
+{
+
 };
 
 #endif

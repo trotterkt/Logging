@@ -2,6 +2,7 @@
 #include "Default\Singleton.h"
 #include <string>
 
+
 class DataNaming : public Singleton<DataNaming>
 {
 public:
