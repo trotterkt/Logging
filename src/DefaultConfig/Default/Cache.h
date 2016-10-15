@@ -10,10 +10,6 @@
 
 
 
-
-
-
-
 template <class Subject> 
 class Cache : public ICache 
 {

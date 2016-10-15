@@ -103,6 +103,7 @@
     <ClInclude Include="src\defaultconfig\MainLogging.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="src\defaultconfig\UpgradeLog.htm" />
     <None Include="src\defaultconfig\UpgradeLog2.htm" />
   </ItemGroup>
