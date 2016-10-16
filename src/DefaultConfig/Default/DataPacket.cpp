@@ -46,6 +46,7 @@ DataPacket::DataPacket(unsigned char* buffer) : myDataWords(0)
 		// change to number of words representation
 		myNumberDataWords /= sizeof(uint16_t);
 
+
 		if(myNumberDataWords > 0)
 		{
 			myDataWords = new uint16_t [myNumberDataWords];

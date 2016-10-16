@@ -48,6 +48,9 @@
     <ClCompile Include="src\DefaultConfig\Default\DataNaming.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\DefaultConfig\Default\TestEquipmentCsvBroker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\defaultconfig\MainLogging.h">
@@ -93,6 +96,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\DefaultConfig\Default\DataNaming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DefaultConfig\Default\TestEquipmentCsvBroker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

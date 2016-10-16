@@ -19,10 +19,6 @@ DataNaming::DataNaming(void)
 		//:TODO: throw exceptions
 	}
 
-	// :TODO: Temp debugging
-	//myBaseDirectory = "W:\\shared_libs.vbt\\NGSysTE\Logging\\Legacy Log Files\\";
-	//myBaseDirectory = "C:\\Users\\Keir\\NGSysTE\\Logging\\Legacy Log Files\\";
-
 	//:TODO: normal call
 	//setBaseFileName();
 	myBaseInFileName = "301_2016_07_19_09_58_48_000_27_52_TEST"; // temp debugging
@@ -46,6 +42,12 @@ void DataNaming::getDataLogOutFileName(std::string& fullName)
 	//fullName.append("ste");
 
 	fullName.append(".log");
+
+	// dont set if zero
+	if(!myBaseOutFileName.length())
+	{
+		fullName.clear();
+	}
 }
 
 void DataNaming::setBaseInFileName()
@@ -98,6 +100,12 @@ void DataNaming::getDataLogInFileName(std::string& fullName)
 	fullName.append("301_2016_07_19_09_58_48_000_27_52_TEST"); // :TODO: temp debug
 
 	fullName.append(".log");
+
+	// dont set if zero
+	if(!myBaseInFileName.length())
+	{
+		fullName.clear();
+	}
 }
 
 void DataNaming::getExcelDataLogFileName(std::string& fullName)
@@ -109,6 +117,12 @@ void DataNaming::getExcelDataLogFileName(std::string& fullName)
 
 	// :TODO: according to whatever the specified base filename format is...
 	fullName.append(myBaseOutFileName); 
+
+	// dont set if zero
+	if(!myBaseOutFileName.length())
+	{
+		fullName.clear();
+	}
 
 	fullName.append(".csv");
 }

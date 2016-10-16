@@ -22,7 +22,7 @@ public:
 	void translate(double subject, std::string& converted); 
 	void translate(DataPacket subject);
 
-	virtual void reset();
+	virtual void resetCache();
 
 private:
 	bool getNextPacket(unsigned char* packetBuffer);

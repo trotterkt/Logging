@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logging", "Logging.vcxproj", "{D8EE0261-532D-4D26-8F8B-12E16A5834BB}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "..\ModelingProject1\ModelingProject1.modelproj", "{DD40DADA-B64E-4B05-9E67-BE2AAE299440}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,14 +19,6 @@ Global
 		{D8EE0261-532D-4D26-8F8B-12E16A5834BB}.Release|Any CPU.ActiveCfg = Release|Win32
 		{D8EE0261-532D-4D26-8F8B-12E16A5834BB}.Release|Win32.ActiveCfg = Release|Win32
 		{D8EE0261-532D-4D26-8F8B-12E16A5834BB}.Release|Win32.Build.0 = Release|Win32
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Debug|Win32.Build.0 = Debug|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Release|Win32.ActiveCfg = Release|Any CPU
-		{DD40DADA-B64E-4B05-9E67-BE2AAE299440}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

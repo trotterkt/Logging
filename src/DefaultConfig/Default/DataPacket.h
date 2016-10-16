@@ -34,6 +34,7 @@ const uint16_t Unknown1_APID(0x201);
 const uint16_t Unknown2_APID(0x209);
 const uint16_t Unknown3_APID(0x210);
 //**********************************
+
 // Largest known data array size is for Diagnostic (APID 0x204)
 //const int MaximumRawPacketSize(sizeof(CCSDS_PrimaryHeader_struct) + sizeof(CCSDS_SecondaryHeader_struct) + 304);
 const int MaximumRawPacketSize(sizeof(CCSDS_PrimaryHeader_struct) + sizeof(CCSDS_SecondaryHeader_struct) + 500); // :TODO: ????
@@ -48,14 +49,7 @@ public:
 	DataPacket& operator=(const DataPacket &right);
 	bool operator<(const DataPacket& right) 
 	{ 
-//		if (((this->getPrimaryHeader().myPacketIdentification) & SecondaryHeaderIndicationMask) >> SecondaryHeaderIndicationBit)
-//		{
-			return (this->myTime < right.myTime);
-//		}
-//		else
-//		{
-//			return false;
-//		}
+		return (this->myTime < right.myTime);
 	}
 
 	CCSDS_PrimaryHeader_struct getPrimaryHeader() { return myHeader; }

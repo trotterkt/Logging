@@ -11,66 +11,33 @@
 
 TestEquipmentBroker::TestEquipmentBroker()
 {
-	// make sure at least one instance has been created
-	// :TODO: might better belong in another place
-	//DataNaming::instance();
+	myOpenMode = _IOSbinary;
 
 	std::string fullPath;
 	DataNaming::instance().getDataLogOutFileName(fullPath);
-	myOutFileStreamPtr = new boost::filesystem::ofstream(fullPath.c_str(), _IOSbinary);
+	myOutFileStreamPtr = new boost::filesystem::ofstream(fullPath.c_str(), myOpenMode);
 
 	DataNaming::instance().getDataLogInFileName(fullPath);
-	myInFileStreamPtr = new boost::filesystem::ifstream(fullPath.c_str(), _IOSbinary); 
-
-	//:TODO: Stub file creation
-	//myOutFileStreamPtr = new boost::filesystem::ofstream("ste.log", _IOSbinary);
-	//myInFileStreamPtr = new boost::filesystem::ifstream("W:\\shared_libs.vbt\\Logging\\Legacy Log Files\\301_2016_07_19_09_58_48_000_27_52_TEST.log", _IOSbinary); // :TODO: This will probabily get
-	//myInFileStreamPtr = new boost::filesystem::ifstream("C:\\Users\\Keir\\NGSysTE\\Logging\\Legacy Log Files\\301_2016_07_19_09_58_48_000_27_52_TEST.log", _IOSbinary); // :TODO: This will probabily get
+	myInFileStreamPtr = new boost::filesystem::ifstream(fullPath.c_str(), myOpenMode);
 																																								   // defined elsewhere
 	// Attach the nessassary cache(s)
 	itsICache.push_back(new Cache<DataPacket>(100)); //:TODO: how big should the buffer be?
 }
 
-void TestEquipmentBroker::reset() 
+
+TestEquipmentBroker::~TestEquipmentBroker()
 {
-
-	//DataNaming name;
-
-	// close current, then establish new streams
-	if(myOutFileStreamPtr)
+	if (myOutFileStreamPtr)
 	{
 		myOutFileStreamPtr->close();
 		delete myOutFileStreamPtr;
 	}
 	
-	if(myInFileStreamPtr)
+	if (myInFileStreamPtr)
 	{
 		myInFileStreamPtr->close();
 		delete myInFileStreamPtr;
 	}
-
-	delete itsICache[0];
-	itsICache.clear();
-
-	std::string fullPath;
-	DataNaming::instance().getDataLogOutFileName(fullPath);
-	myOutFileStreamPtr = new boost::filesystem::ofstream(fullPath.c_str(), _IOSbinary);
-
-	DataNaming::instance().getDataLogInFileName(fullPath);
-	myInFileStreamPtr = new boost::filesystem::ifstream(fullPath.c_str(), _IOSbinary); 
-
-	// Attach the nessassary cache(s)
-
-	itsICache.push_back(new Cache<DataPacket>(100)); //:TODO: how big should the buffer be?
-}
-
-TestEquipmentBroker::~TestEquipmentBroker()
-{
-	myOutFileStreamPtr->close();
-	delete myOutFileStreamPtr;
-	
-	myInFileStreamPtr->close();
-	delete myInFileStreamPtr;
 
 	// destroy the cache object(s)
 	delete itsICache[0];
@@ -153,38 +120,13 @@ ICache* TestEquipmentBroker::materializeAll()
 		//*****************************
 	}
 
-	/*
-	//:TODO: This call should probabliy be launched
-	// from main()
-	//***********************************************
-
-	// This becomes unnessassary, since now the OID referes
-	// to the relative position
-	Sorting sort;
-	std::vector< std::pair<std::string, DataPacket> > sortedBuffer = cachePtr->getByValueCollection(&sort);
-	record = 0;
-
-	for (std::vector<std::pair<std::string, DataPacket>>::const_iterator i = sortedBuffer.begin(); i != sortedBuffer.end(); ++i)
-	{
-		DataPacket packet((&*i)->second);
-	    short packetId = (packet.getPrimaryHeader().myPacketIdentification) & ApidMask;
-	    short packetSeq = (packet.getPrimaryHeader().myPacketSequenceControl) & PacketSequenceMask;
-		int day = packet.getTime().getDay();
-		long long milliSec = packet.getTime().getMilliSeconds();
-		int microSec = packet.getTime().getMicroSeconds();
-		std::cout << "Record #" << std::dec << record
-			      << " APID(" << std::hex << int(packetId)
-			      << ") Sequence #" << std::dec << int(packetSeq) 
-			      << " Time " << day << ":" << milliSec << ":" << microSec << std::endl;
-
-		record++;
-	}
-	//***********************************************
-	*/
-
 	return cachePtr;
 }
 
+void TestEquipmentBroker::resetCache()
+{
+	itsICache.push_back(new Cache<DataPacket>(100)); //:TODO: how big should the buffer be?
+}
 
 void* TestEquipmentBroker::objectWith(std::string oid)
 { 

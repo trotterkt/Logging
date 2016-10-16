@@ -17,17 +17,15 @@ public:
 	//:TODO: Try templated method (This appears to work only when implementation defined in the interface file)
 	template<class Subject>
 	void putObject(Subject* subject) //:TODO: ****There may no longer be a need for the subject object***
-	{ 
-	
-		//std::ostringstream message;
-		//message << "test write from abstract broker ==> " << *subject << std::endl;
-		//myFileStreamPtr->write(message.str().c_str(), message.str().size()); //:TODO: Stub
-
+	{ 		
+		
 		// get the length of the buffer
-		myTranslatedBuffer.seekp(0, std::ios::end);
-		std::streamoff end = myTranslatedBuffer.tellp();
+		size_t length = myTranslatedBuffer.str().length();
+
+		//myTranslatedBuffer.seekp(0, std::ios::end);
+		//std::streamoff end = myTranslatedBuffer.tellp();
        
-		myOutFileStreamPtr->write(myTranslatedBuffer.str().c_str(), end);
+		myOutFileStreamPtr->write(myTranslatedBuffer.str().c_str(), length);
 
 		// Write these contents to the file
 		myOutFileStreamPtr->flush();
@@ -59,15 +57,19 @@ public:
 	}
 
 	virtual ICache* materializeAll() = 0;
+	
+	virtual void reset();
+
 
 protected:
+	virtual void resetCache() = 0;
+
 	boost::filesystem::ofstream* myOutFileStreamPtr;
 	boost::filesystem::ifstream* myInFileStreamPtr;
 	std::ostringstream myTranslatedBuffer;
 	
 	void* myTranslatedObject;
-
-
+	int myOpenMode;
 };
 
 #endif

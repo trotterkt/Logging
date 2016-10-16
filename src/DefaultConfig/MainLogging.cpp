@@ -3,6 +3,7 @@
  
 #include "Default\VirtualProxy.h"
 #include "Default\TestEquipmentBroker.h"
+#include "Default\TestEquipmentCsvBroker.h"
 #include "Default\DataPacket.h"
 #include "Default\ObjectIdentification.h"
 #include "Default\Cache.h"
@@ -89,7 +90,8 @@ int main(int argc, char* argv[])
 		//===========================================================
 		{
 
-		    VirtualProxy<DataPacket, TestEquipmentBroker> testProxy;
+			VirtualProxy<DataPacket, TestEquipmentBroker> testProxy;
+			VirtualProxy<DataPacket, TestEquipmentCsvBroker> testCsvProxy;
 
 			static long record(0);
 
@@ -101,10 +103,12 @@ int main(int argc, char* argv[])
 			//====================================================
 			// During debug - persistence target is a time stamp uniquly named log
             DataNaming::instance().setBaseOutFileName();
-			testProxy.reset();			
+			testProxy.reset();
+			testCsvProxy.reset();
 			//====================================================
 
 			std::cout << "Generating persistent data..." << std::endl;
+
 
 			for (std::vector<std::pair<std::string, DataPacket>>::const_iterator i = sortedBuffer.begin(); i != sortedBuffer.end(); ++i)
 			{
@@ -113,6 +117,9 @@ int main(int argc, char* argv[])
 				CCSDS_PrimaryHeader_struct header = packet.getPrimaryHeader();
 				testProxy.create(getDataPacketOid(reinterpret_cast<unsigned char*>(&header), record));
 		        testProxy.putRealSubject(packet);
+
+				// place the same object for CSV
+				testCsvProxy.putRealSubject(packet);
 
 				short packetId = (packet.getPrimaryHeader().myPacketIdentification) & ApidMask;
 				short packetSeq = (packet.getPrimaryHeader().myPacketSequenceControl) & PacketSequenceMask;
@@ -132,6 +139,7 @@ int main(int argc, char* argv[])
 			// During debug - persistence target is a time stamp uniquly named log
 			DataNaming::instance().setBaseOutFileName();
 			testProxy.reset();
+			testCsvProxy.reset();
 			//====================================================
 
 			std::string oid;
